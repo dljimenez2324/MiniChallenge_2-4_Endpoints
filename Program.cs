@@ -55,7 +55,8 @@ app.MapGet("/greaterThanLessThanEqual", (double a, double b) => {
         resultTwo = a + " is equal to " + b + "!";
     }
     
-    return "resultOne \n" + "resultTwo" ;
+    string statement = resultOne + "\n" + resultTwo;
+    return statement;
 });
 
 
