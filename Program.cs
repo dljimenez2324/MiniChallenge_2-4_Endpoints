@@ -16,29 +16,44 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+// Sum Endpoint
+app.MapGet("/sumOfTwo", (double a, double b) => {
+    
+    double sum = a + b;
+   
+    string result = "The sum of " + a + " and " + b + " is " + sum + ".";
+    return result;
+});
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
+// Name & Awake time Endpoint
+app.MapGet("/oneSentence", (string yourName, string timeYouAwoke) => {
+    
+    string result = "Hello " + yourName + "! I see you woke up at " + timeYouAwoke + ". I hope you are well rested! Go make that money!";
+    return result;
+});
+
+// Greater than Less Than Statements Endpoint
+app.MapGet("/greaterThanLessThanEqual", (double a, double b) => {
+    
+    string resultOne = "";
+    string resultTwo = "";
+    if (a > b){
+        resultOne = a + " is great than " + b + "!";
+        resultTwo = b + " is less than " + a + "!";
+    }
+    if (b > a){
+        resultOne = b + " is great than " + a + "!";
+        resultTwo = a + " is less than " + b + "!";   
+    }
+    else {
+        resultOne = b + " is equal to " + a + "!";
+        resultTwo = a + " is equal to " + b + "!";
+    }
+    
+    return "resultOne \n" + "resultTwo" ;
+});
+
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+
