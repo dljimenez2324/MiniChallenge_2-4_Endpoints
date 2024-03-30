@@ -35,16 +35,21 @@ app.MapGet("/oneSentence", (string yourName, string timeYouAwoke) => {
 // Greater than Less Than Statements Endpoint
 app.MapGet("/greaterThanLessThanEqual", (double a, double b) => {
     
+    // establish two results
     string resultOne = "";
     string resultTwo = "";
+
+    // check for comparisons
     if (a > b){
         resultOne = a + " is great than " + b + "!";
         resultTwo = b + " is less than " + a + "!";
     }
-    if (b > a){
+
+    else if (b > a){
         resultOne = b + " is great than " + a + "!";
         resultTwo = a + " is less than " + b + "!";   
     }
+
     else {
         resultOne = b + " is equal to " + a + "!";
         resultTwo = a + " is equal to " + b + "!";
