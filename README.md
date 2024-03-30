@@ -1,4 +1,4 @@
-# Mini Challenge - 1 Endpoint
+# Mini Challenge - 2-4 Endpoints
 
 <b>Name:</b> David Jimenez<br>
 <b>Project:</b> Mini Challenge - 2-4 Endpoints <br>
