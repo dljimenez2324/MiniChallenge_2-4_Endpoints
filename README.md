@@ -28,7 +28,7 @@ Things to turn in: <br>
 
 
 <b>Resources:</b> <br>
-<b>GitHub:</b> https://github.com/dljimenez2324/MiniChallenge_1_Endpoint <br>
+<b>GitHub:</b> https://github.com/dljimenez2324/MiniChallenge_2-4_Endpoints <br>
 
 
 Peer Reviewed by _____________ <br>
