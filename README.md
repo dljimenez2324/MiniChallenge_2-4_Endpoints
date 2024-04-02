@@ -31,5 +31,5 @@ Things to turn in: <br>
 <b>GitHub:</b> https://github.com/dljimenez2324/MiniChallenge_2-4_Endpoints <br>
 
 
-Peer Reviewed by _____________ <br>
-Comments:  <br> <br>
+Peer Reviewed by Jerie See Villanueva <br>
+Comments:  <br> David's dedication to clean code and his initiative in adding extra features to challenge himself are truly commendable. Going above and beyond not only enhances his own learning but also sets a high standard. It's a great reminder that continuous learning and pushing boundaries lead to growth and mastery. Kudos to David for his exemplary approach!.<br>
