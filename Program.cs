@@ -41,12 +41,12 @@ app.MapGet("/greaterThanLessThanEqual", (double a, double b) => {
 
     // check for comparisons
     if (a > b){
-        resultOne = a + " is great than " + b + "!";
+        resultOne = a + " is greater than " + b + "!";
         resultTwo = b + " is less than " + a + "!";
     }
 
     else if (b > a){
-        resultOne = b + " is great than " + a + "!";
+        resultOne = b + " is greater than " + a + "!";
         resultTwo = a + " is less than " + b + "!";   
     }
 
